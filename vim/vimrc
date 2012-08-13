@@ -34,9 +34,10 @@ set wildignore=*.o,*~,*.pyc
 "
 " "Always show current position
 set ruler
+set nu
 "
 " " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 "
 " " A buffer becomes hidden when it is abandoned
 set hid
@@ -85,8 +86,8 @@ colorscheme desert
 set background=dark
 "
 
-"                 " Set utf8 as standard encoding and en_US as the standard
-"                 language
+"Set utf8 as standard encoding and en_US as the standard
+"language
 set encoding=utf8
 "
 "                 " Use Unix as the standard file type
@@ -114,6 +115,7 @@ set smarttab
 " " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set cursorline
 "
 " " Linebreak on 500 characters
 set lbr
@@ -186,4 +188,12 @@ set viminfo^=%
 " """"""""""""""""""""""""""""""
 " " Always show the status line
 set laststatus=2
-"
+set statusline=[%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
+let Tlist_Auto_Open = 1
+let Tlist_Compact_Format = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+let tlist_php_settings = 'php;f:function'
+let Tlist_Auto_Highlight_Tag = 1
+:highlight MyTagListTagName guifg=blue ctermfg=blue
+"let Tlist_Display_Prototype = 1
