@@ -1,0 +1,19 @@
+[http]
+	sslVerify = false
+[user]
+	name = Anakin Sun
+	email = sunyu@sooker.com
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit -- 
+	rb = rebase
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
